@@ -10,5 +10,8 @@ next2 + next2
 
 // Changes made in master to be frank
 
+// making some commits here 
+// thanks
+
 console.log(previous)
 console.log(next)
