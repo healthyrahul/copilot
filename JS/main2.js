@@ -8,5 +8,7 @@ next2 + next2
 
 // wowo this made is cool
 
+// Changes made in master to be frank
+
 console.log(previous)
 console.log(next)
