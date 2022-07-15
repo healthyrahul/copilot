@@ -1,0 +1,7 @@
+syntax = "proto3";
+
+message Thing {
+    string first = 1;
+    bool second = 2;
+    int32 third = 3;
+}
