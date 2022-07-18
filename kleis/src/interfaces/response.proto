@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+package cadmus.pbuf.api.kleis.v2;
+
+option go_package = "artemishealth.com/cadmus/proto/cadmus/pbuf/api/kleis/v2";
+
+// This protocol can be represented as a JSON of this form
+// {
+//   "checked_groups": [
+//     {"name": "permission_group_1", "permission": false},
+//     {"name": "permission_group_2", "permission": true},
+//     ...
+//   ]
+// }
+//
+// A permission group should return false if the entity in question lacks one or
+// more of the permissions requested by the group.
+
+message PermissionResponse {
+  repeated CheckedGroup checked_groups = 1;
+}
+
+message CheckedGroup {
+  string name = 1;
+  bool permission = 2;
+}
