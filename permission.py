@@ -21,7 +21,11 @@ print(MessageToJson(permission))
 
 """
 Example to create protobuf to python code
+
+Don't forget to export
+export PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=python 
 """
+
 # mkdir src/generated
 # protoc src/interfaces/person_info.proto --python_out src/ --proto_path generated=./src/interfaces/
 # protoc src/interfaces/person.proto --python_out src/ --proto_path generated=./src/interfaces/
